@@ -10,6 +10,7 @@ echo gettype( $var1 ); //type variable
 //affichage entete tableau
 $NbrCol = 3;
 $tableau = array('Variable','Valeur','Type');
+// $tableauVal= array(var[$k],$var[$k], gettype($var[$k]));
 // -------------------------------------------------------
 $NbreData = sizeof($tableau);
 // -------------------------------------------------------
@@ -46,4 +47,3 @@ echo 'pas de données à afficher';
 ?>
 
 
-?>
