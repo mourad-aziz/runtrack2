@@ -25,7 +25,7 @@ echo "<form action=\"\" method=\"post\">
 
      $username = $_POST['username'];
      $password = $_POST['password'];
-     if ($username=='John' && $password == 'Rambo' ) {
+     if ($username =='John' && $password == 'Rambo' ) {
          echo "C’est pas ma guerre" ;
         }
 
