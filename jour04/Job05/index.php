@@ -10,9 +10,9 @@ sinon afficher : “Votre pire cauchemar”.*/
 
 echo "<form action=\"\" method=\"post\">
     <h3> Password Methode POST </h3>
-    username :     <input type=\"text\" name=\"username\" />
+    username :     <input required type=\"text\" name=\"username\" />
 
-    password :     <input type=\"password\" name=\"password\" />
+    password :     <input required type=\"password\" name=\"password\" />
 
 
 

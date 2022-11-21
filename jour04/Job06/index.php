@@ -9,7 +9,7 @@ si c’est un nombre impair, afficher “Nombre impair”.*/
 
  echo "<form action=\"\" method=\"get\">
     <h3> Parité </h3>
-    nombre :     <input type=\"number\" name=\"nombre\" />
+    nombre :     <input required type=\"number\" name=\"nombre\" />
 
     <input type=\"submit\" name=\"submit\" />
 </form>

@@ -13,11 +13,11 @@ nom      Dupont*/
 
 echo "<form action=\"\" method=\"get\">
     <h3> Tableau Methode GET </h3>
-    Nom :     <input type=\"text\" name=\"nom\" />
+    Nom :     <input required type=\"text\" name=\"nom\" />
 
-    Age :     <input type=\"text\" name=\"age\" />
+    Age :     <input required type=\"number\" min=\"0\" value=\"18\" name=\"age\" />
 
-    Adresse : <input type=\"text\" name=\"adresse\" />
+    Adresse : <input required type=\"text\" name=\"adresse\" />
 
     <input type=\"submit\" name=\"submit\" />
 </form>
