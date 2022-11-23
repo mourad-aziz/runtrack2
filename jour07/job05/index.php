@@ -6,7 +6,9 @@
 //Elle doit retourner le nombre d'occurrences du caractère “$char” dans “$str”.
 //Exemple : si $str = “Bonjour” et $char=”o” alors le nombre d'occurrences de $char dans
 //$str sera : 2
+function strlent(){
 
+}
 function occurrences($str, $char)
 {
 
@@ -23,9 +25,9 @@ function occurrences($str, $char)
 }
 
     // Driver Code
-    $str= "Bonjour";
+    $str= "Bonjourno";
     $char = 'o';
-    echo occurrences($str, $char) ;
+    echo $str . " " . "contient " . occurrences($str, $char) . " " .$char ;
     return 0;
 
 
