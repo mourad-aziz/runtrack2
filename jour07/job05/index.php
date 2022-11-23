@@ -6,9 +6,14 @@
 //Elle doit retourner le nombre d'occurrences du caractère “$char” dans “$str”.
 //Exemple : si $str = “Bonjour” et $char=”o” alors le nombre d'occurrences de $char dans
 //$str sera : 2
-function strlent(){
+// function strlenth($str){
+//
+//        return length;
+//}
 
-}
+
+
+
 function occurrences($str, $char)
 {
 
