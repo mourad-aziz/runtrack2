@@ -1,3 +1,4 @@
+
 <?php
 $servername = "localhost";
 $username = "root";
@@ -10,14 +11,14 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT prenom, nom, naissance FROM etudiants WHERE sexe = 'Femme'";
+$sql = "SELECT prenom, nom, naissance, sexe, email FROM etudiants WHERE prenom LIKE 'T%' ";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
-    echo "<table><tr><th>Prénom</th><th>Nom</th><th>Naissance";
+    echo "<table><tr><th>Prénom</th><th>Nom</th><th>Naissance</th><th>Sexe</th><th>Email</th><tr>";
     while($row = $result->fetch_assoc()) {
-        echo "<tr><td>".$row["prenom"]."</td><td>".$row["nom"]."</td><td>".$row["naissance"]."</td></tr>";
+        echo "<tr><td>".$row["prenom"]."</td><td>".$row["nom"]."</td><td>".$row["naissance"]."</td><td>".$row["sexe"]."</td><td>".$row["email"]."</td></tr>";
     }
     echo "</table>";
 } else {
@@ -25,3 +26,4 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 ?>
+

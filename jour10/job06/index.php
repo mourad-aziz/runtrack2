@@ -1,4 +1,6 @@
 <?php
+//SELECT COUNT(*) FROM jour09.etudiants;
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -10,14 +12,15 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT prenom, nom, naissance FROM etudiants WHERE sexe = 'Femme'";
+$sql = "SELECT COUNT(*) FROM etudiants;";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
-    echo "<table><tr><th>Prénom</th><th>Nom</th><th>Naissance";
-    while($row = $result->fetch_assoc()) {
-        echo "<tr><td>".$row["prenom"]."</td><td>".$row["nom"]."</td><td>".$row["naissance"]."</td></tr>";
+    echo "<table><tr><th>Nombre étudiants</th><tr>";
+    while($row = $result->fetch_row()) {
+
+        echo "<tr><td>" . $row[0] . "</td></tr>";
     }
     echo "</table>";
 } else {
@@ -25,3 +28,4 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 ?>
+
